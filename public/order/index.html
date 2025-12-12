@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-07PRS0W6YC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-07PRS0W6YC');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="keywords" content="Order Status, Order Tracker, Order Submission, Management, PSA, BGS, SGC, Card, Grading, Submit, Submission, Service, Singapore, Sg, Sgd, sgcardbros, bros, TCG, Trading Card Games, Pokemon, Magic, Mtg, Sports, NBA, Basketball, Soccer, Yu-gi-oh!, Yugioh, Buddyfight, Vanguard, Dragon Ball">
+    <meta name="description" content="Order Submission Status and Order Tracker Management for SG Card Bros (sgcardbros) PSA Grading Submission. Card Types: TCG Pokemon, Mtg, Yugioh, Sports & Non Sports.">  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/IPkTog5.png"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <title>Order Status | sgcardbros</title>
+    <style>
+      iframe {
+         height: 100%;
+          width: 100%;
+          position: absolute;
+          margin: auto ;
+          border:none;
+      }
+ 
+    </style>
+</head>
+<body>
+  
+  
+  <nav>
+    <div class="nav-wrapper">
+    <div class="container">
+        <a href="https://sgcardbros.com/"><img class="logoImage" src="https://i.imgur.com/IPkTog5.png"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down upperCase" style="padding-top: 20px;">
+            <li><a href="https://sgcardbros.com">PSA Grading Submission</a></li>                   
+            <li><a href="https://sgcardbros.com/faq">FAQs</a></li>
+            <li><a href="https://sgcardbros.com/marketplace">Marketplace</a></li>
+            <li><a href="https://sgcardbros.com/daily">eBay Daily Auctions</a></li>
+            <li><a href="https://sgcardbros.com/collection">PC</a></li>                       
+            <li><a href="https://sgcardbros.com/about">About Us</a></li>
+            <li><a href="https://sgcardbros.com/login">Login</a></li>
+        </ul>
+      </div>  
+    </div>
+
+</nav>
+
+<ul class="sidenav upperCase" id="mobile-demo">
+    
+      <li><a href="https://sgcardbros.com">PSA Grading Submission</a></li>
+    <li><a href="https://sgcardbros.com/faq">FAQs</a></li>
+    <li><a href="https://sgcardbros.com/marketplace">Marketplace</a></li>            
+    <li><a href="https://sgcardbros.com/daily">eBay Daily Auctions</a></li>
+    <li><a href="https://sgcardbros.com/collection">PC</a></li>
+    <li><a href="https://sgcardbros.com/about">About Us</a></li>
+    <li><a href="https://sgcardbros.com/login">Login</a></li>
+</ul>
+
+
+<!--Section 1 -->  
+<section>
+
+<div class="container pad">
+
+    <h3 class="center">ACTIVE SUBMISSION STATUS</h3>
+    
+    <p class="center">Once the submission arrived at PSA, we will be updating the Status Column with PSA Updates (as shown below). *Note: There is no set processing time for each stage.</p>
+   
+   
+    <div class="row center">
+        <div class="col s12" >
+          <ul class="tabs tabs-transparent" >
+            <li class="tab"><a class="active"  href="#stage1"><b>ARRIVED</b></a></li>
+            <li class="tab"><a href="#stage2"><b>ORDER PREP</b></a></li>
+            <li class="tab "><a href="#stage3"><b>RESEARCH & ID</b></a></li>
+            <li class="tab"><a href="#stage4"><b>GRADING</b></a></li>
+            <li class="tab"><a href="#stage5"><b>ASSEMBLY</b></a></li>
+             <li class="tab"><a href="#stage6"><b>GRADES READY</b></a></li>
+             <li class="tab"><a href="#stage7"><b>QA CHECKS</b></a></li>
+             <li class="tab"><a href="#stage8"><b>SHIPPED</b></a></li>
+          </ul>
+          <div id="stage1" class="col s12"><p><i>Your submission has arrived at PSA.</i></p></div>
+          <div id="stage2" class="col s12"><p><i>Your submission is being reviewed, verified, and logged into the system in preparation for processing to begin.</i></p></div>
+          <div id="stage3" class="col s12"><p><i>Your submission is being researched so each item can be correctly identified on the PSA label.</i></p></div>
+          <div id="stage4" class="col s12"><p><i>Your submission is going through the authentication and grading process.</i></p></div>
+          <div id="stage5" class="col s12"><p><i>PSA labels are being printed, and each eligible item will be sonically sealed within a PSA holder.</i></p></div>
+          <div id="stage6" class="col s12"><p><i>Grades Available.</i></p></div>
+          <div id="stage7" class="col s12"><p><i>Labels are being reviewed for errors, and holders are examined for defects.</i></p></div>
+          <div id="stage8" class="col s12"><p><i>Your items are shipped.</i></p></div>
+      </div>
+   </div> 
+</div>    
+
+</section>
+
+<!--Section 2-->  
+<section>
+
+<div id="stats"></div>
+
+</section>
+
+<!--Section 3--> 
+<section>       
+<div class="container pad">
+
+
+<div class="row">      
+<div class="col m3 s6">
+   <p>Last updated: <span id="updatedDate"></span></p>
+
+
+  <label for="search"><b>SEARCH GROUP</b></label>
+  <input placeholder= "TCG1" class= "browser-default form-control" id="search" type="text" onkeyup="searchTable()">
+</div>   
+</div>     
+   <blockquote>All Active Orders for <u>Projected Completion Dates are based on PSA <a target="_blank" href = "https://www.psacard.com/communication#ctd" >Estimated Turnaround Time</a></u> once the orders are entered into PSA system. Submitters can now have a more accurate representation of the progress of their orders which changes real time based on PSA Estimated Turnaround Time.</blockquote>
+
+
+   <div id="groupTabs" class="col s12">
+    <ul class="tabs tabs-fixed-width">       
+      <li class="tab "><a class="active grey-text" href="#activeTable" ><b>ACTIVE</b></a></li>
+      <li class="tab "><a class="grey-text" href="#completedTable" ><b>COMPLETED</b></a></li>          
+    </ul> 
+</div>                   
+
+
+<div id ="activeTable" style="overflow-x:auto; overflow-y:auto;">
+
+<table id="tableStatus" class="styled-table striped z-depth-3">
+<thead  style="position: sticky; top: 0;">
+  <tr>
+      <th data-column="0" data-order="asc" style="text-align:center;" >Group &#9660</th>
+      <th data-column="1" data-order="asc">Category &#9660</th>
+      <th data-column="2" data-order="asc" style="text-align:center;" >Status &#9660</th>                   
+      <th data-column="3" data-order="asc" style="text-align:center;" >Date Arrived at PSA &#9660</th>
+      <th data-column="4" data-order="asc" style="text-align:center;" >Date Entered at PSA &#9660</th>
+      <th data-column="5" data-order="asc" style="text-align:center;" >Projected Completion Date &#9660</th>
+      <th data-column="6" data-order="asc" style="text-align:center;" >Actual Completion Date &#9660</th>
+  </tr>
+</thead>
+
+<tbody id="activeGroup">
+
+</tbody>
+</table>
+
+<div id = "noLine" style="text-align:center;"></div>
+
+
+</div>
+
+
+<div id ="completedTable" style="overflow-x:auto; overflow-y:auto;">
+
+<table class="styled-table striped z-depth-3">
+<thead  style="position: sticky; top: 0;">
+  <tr>
+      <th style="text-align:center;" >Group</th>
+      <th>Category</th>
+      <th style="text-align:center;" >Status</th>                   
+      <th style="text-align:center;" >Date Arrived at PSA</th>
+      <th style="text-align:center;" >Date Entered at PSA</th>
+      <th style="text-align:center;" >Projected Completion Date</th>
+      <th style="text-align:center;" >Actual Completion Date</th>
+  </tr>
+</thead>
+
+<tbody id="completedGroup">
+    <tr>
+        <td style="text-align:center; font-weight:bold;">TCG29</td>
+        <td>Trading Card Game Cards</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">26/03/2025</td>
+        <td style="text-align:center;">27/03/2025</td>
+        <td style="text-align:center;">30/05/2025</td>
+        <td style="text-align:center;">29/05/2025</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">TCG28</td>
+        <td>Trading Card Game Cards</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">19/12/2024</td>
+        <td style="text-align:center;">22/01/2025</td>
+        <td style="text-align:center;">02/04/2025</td>
+        <td style="text-align:center;">03/03/2025</td>
+    </tr> 
+    <tr>
+        <td style="text-align:center; font-weight:bold;">TCG27</td>
+        <td>Trading Card Game Cards</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">05/11/2024</td>
+        <td style="text-align:center;">25/11/2024</td>
+        <td style="text-align:center;">10/02/2025</td>
+        <td style="text-align:center;">21/02/2025</td>
+    </tr> 
+    <tr>
+        <td style="text-align:center; font-weight:bold;">TCG26</td>
+        <td>Trading Card Game Cards</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">26/09/2024</td>
+        <td style="text-align:center;">10/10/2024</td>
+        <td style="text-align:center;">23/12/2024</td>
+        <td style="text-align:center;">10/12/2024</td>
+    </tr> 
+    <tr>
+        <td style="text-align:center; font-weight:bold;">TCG25</td>
+        <td>Trading Card Game Cards</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">16/08/2024</td>
+        <td style="text-align:center;">29/08/2024</td>
+        <td style="text-align:center;">08/11/2024</td>
+        <td style="text-align:center;">04/10/2024</td>
+    </tr>    
+    <tr>
+        <td style="text-align:center; font-weight:bold;">TCG24</td>
+        <td>Trading Card Game Cards</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">12/07/2024</td>
+        <td style="text-align:center;">06/08/2024</td>
+        <td style="text-align:center;">16/10/2024</td>
+        <td style="text-align:center;">11/09/2024</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">BO9</td>
+        <td>Bulk (1980-Present)</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">12/07/2024</td>
+        <td style="text-align:center;">06/08/2024</td>
+        <td style="text-align:center;">16/10/2024</td>
+        <td style="text-align:center;">05/09/2024</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">RH9</td>
+        <td>Reholder</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">24/04/2024</td>
+        <td style="text-align:center;">25/04/2024</td>
+        <td style="text-align:center;">01/07/2024</td>
+        <td style="text-align:center;">22/05/2024</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">TCG23</td>
+        <td>Trading Card Game Cards</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">24/04/2024</td>
+        <td style="text-align:center;">25/04/2024</td>
+        <td style="text-align:center;">08/07/2024</td>
+        <td style="text-align:center;">22/05/2024</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">TCG22</td>
+        <td>Trading Card Game Cards</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">28/03/2024</td>
+        <td style="text-align:center;">11/04/2024</td>
+        <td style="text-align:center;">12/06/2024</td>
+        <td style="text-align:center;">03/05/2024</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">TCG21</td>
+        <td>Trading Card Game Cards</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">07/03/2024</td>
+        <td style="text-align:center;">11/03/2024</td>
+        <td style="text-align:center;">22/05/2024</td>
+        <td style="text-align:center;">02/04/2024</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">TCG20</td>
+        <td>Trading Card Game Cards</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">24/01/2024</td>
+        <td style="text-align:center;">29/01/2024</td>
+        <td style="text-align:center;">29/04/2024</td>
+        <td style="text-align:center;">27/02/2024</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">TCG19</td>
+        <td>Trading Card Game Cards</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">28/12/2023</td>
+        <td style="text-align:center;">02/01/2024</td>
+        <td style="text-align:center;">03/04/2024</td>
+        <td style="text-align:center;">20/02/2024</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">TCG18</td>
+        <td>Trading Card Game Cards</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">22/11/2023</td>
+        <td style="text-align:center;">30/11/2023</td>
+        <td style="text-align:center;">04/03/2024</td>
+        <td style="text-align:center;">28/12/2023</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">BO8</td>
+        <td>Bulk (1980-Present)</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">26/10/2023</td>
+        <td style="text-align:center;">30/10/2023</td>
+        <td style="text-align:center;">28/01/2024</td>
+        <td style="text-align:center;">04/12/2023</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">TCG17</td>
+        <td>Trading Card Game Cards</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">26/10/2023</td>
+        <td style="text-align:center;">30/10/2023</td>
+        <td style="text-align:center;">28/01/2024</td>
+        <td style="text-align:center;">01/12/2023</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">BO7</td>
+        <td>Bulk (1980-Present)</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">29/09/2023</td>
+        <td style="text-align:center;">02/10/2023</td>
+        <td style="text-align:center;">31/12/2023</td>
+        <td style="text-align:center;">14/11/2023</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">TCG16</td>
+        <td>Trading Card Game Cards</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">29/09/2023</td>
+        <td style="text-align:center;">02/10/2023</td>
+        <td style="text-align:center;">31/12/2023</td>
+        <td style="text-align:center;">27/10/2023</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">RH8</td>
+        <td>Reholder Special</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">24/08/2023</td>
+        <td style="text-align:center;">25/08/2023</td>
+        <td style="text-align:center;">24/10/2023</td>
+        <td style="text-align:center;">13/10/2023</td>
+    </tr>
+    <tr>
+        <td style="text-align:center; font-weight:bold;">BO6</td>
+        <td>Bulk (1980-Present)</td>
+        
+        <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+        <td style="text-align:center;">24/08/2023</td>
+        <td style="text-align:center;">25/08/2023</td>
+        <td style="text-align:center;">23/11/2023</td>
+        <td style="text-align:center;">02/10/2023</td>
+    </tr>
+    <tr>
+    <td style="text-align:center; font-weight:bold;">TCG15</td>
+    <td>Trading Card Game Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">24/08/2023</td>
+    <td style="text-align:center;">25/08/2023</td>
+    <td style="text-align:center;">23/11/2023</td>
+    <td style="text-align:center;">26/09/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">TCG14</td>
+    <td>Trading Card Game Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">27/07/2023</td>
+    <td style="text-align:center;">28/07/2023</td>
+    <td style="text-align:center;">26/10/2023</td>
+    <td style="text-align:center;">23/08/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RH7</td>
+    <td>Reholder (Expedited)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">27/07/2023</td>
+    <td style="text-align:center;">28/07/2023</td>
+    <td style="text-align:center;">07/08/2023</td>
+    <td style="text-align:center;">02/08/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">VO3</td>
+    <td>Value Plus</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">28/06/2023</td>
+    <td style="text-align:center;">29/06/2023</td>
+    <td style="text-align:center;">29/07/2023</td>
+    <td style="text-align:center;">25/07/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">TCG13</td>
+    <td>Trading Card Game Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">28/06/2023</td>
+    <td style="text-align:center;">29/06/2023</td>
+    <td style="text-align:center;">27/09/2023</td>
+    <td style="text-align:center;">01/09/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO18</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">28/06/2023</td>
+    <td style="text-align:center;">29/06/2023</td>
+    <td style="text-align:center;">14/07/2023</td>
+    <td style="text-align:center;">24/07/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">BO5</td>
+    <td>Bulk (1980-Present)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">28/06/2023</td>
+    <td style="text-align:center;">29/06/2023</td>
+    <td style="text-align:center;">27/09/2023</td>
+    <td style="text-align:center;">25/07/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">VO2</td>
+    <td>Value Plus</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">25/05/2023</td>
+    <td style="text-align:center;">01/06/2023</td>
+    <td style="text-align:center;">01/07/2023</td>
+    <td style="text-align:center;">22/06/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">TCG12</td>
+    <td>Trading Card Game Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">25/05/2023</td>
+    <td style="text-align:center;">01/06/2023</td>
+    <td style="text-align:center;">30/08/2023</td>
+    <td style="text-align:center;">25/07/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">BO4</td>
+    <td>Bulk (1980-Present)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">25/05/2023</td>
+    <td style="text-align:center;">01/06/2023</td>
+    <td style="text-align:center;">30/08/2023</td>
+    <td style="text-align:center;">27/06/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">BO3</td>
+    <td>Bulk (1980-Present)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">01/05/2023</td>
+    <td style="text-align:center;">02/05/2023</td>
+    <td style="text-align:center;">31/07/2023</td>
+    <td style="text-align:center;">24/05/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO17</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">22/03/2023</td>
+    <td style="text-align:center;">29/03/2023</td>
+    <td style="text-align:center;">12/04/2023</td>
+    <td style="text-align:center;">04/04/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">BO2</td>
+    <td>Bulk (1980-Present)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">22/03/2023</td>
+    <td style="text-align:center;">29/03/2023</td>
+    <td style="text-align:center;">27/06/2023</td>
+    <td style="text-align:center;">09/05/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">TCG11</td>
+    <td>TCG Bulk Special</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">22/02/2023</td>
+    <td style="text-align:center;">27/02/2023</td>
+    <td style="text-align:center;">28/05/2023</td>
+    <td style="text-align:center;">20/04/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO20</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">22/02/2023</td>
+    <td style="text-align:center;">27/02/2023</td>
+    <td style="text-align:center;">06/03/2023</td>
+    <td style="text-align:center;">07/03/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">BO1</td>
+    <td>Bulk (1980-Present)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">18/01/2023</td>
+    <td style="text-align:center;">24/01/2023</td>
+    <td style="text-align:center;">24/04/2023</td>
+    <td style="text-align:center;">17/03/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">TCG10</td>
+    <td>TCG Bulk Special</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">28/10/2022</td>
+    <td style="text-align:center;">01/11/2022</td>
+    <td style="text-align:center;">03/01/2023</td>
+    <td style="text-align:center;">04/01/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO16</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">28/10/2022</td>
+    <td style="text-align:center;">31/10/2022</td>
+    <td style="text-align:center;">30/11/2022</td>
+    <td style="text-align:center;">10/11/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">VO1</td>
+    <td>Value (1996-Present)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">26/08/2022</td>
+    <td style="text-align:center;">09/09/2022</td>
+    <td style="text-align:center;">07/01/2023</td>
+    <td style="text-align:center;">28/10/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RH6</td>
+    <td>Reholder (Expedited)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">26/08/2022</td>
+    <td style="text-align:center;">26/08/2022</td>
+    <td style="text-align:center;">25/09/2022</td>
+    <td style="text-align:center;">30/08/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO19</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">26/08/2022</td>
+    <td style="text-align:center;">29/08/2022</td>
+    <td style="text-align:center;">07/09/2022</td>
+    <td style="text-align:center;">06/09/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">ECO7</td>
+    <td>Economy</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">26/08/2022</td>
+    <td style="text-align:center;">07/09/2022</td>
+    <td style="text-align:center;">06/12/2022</td>
+    <td style="text-align:center;">27/10/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">VS1</td>
+    <td>Value Special (1996-Present)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">28/07/2022</td>
+    <td style="text-align:center;">06/08/2022</td>
+    <td style="text-align:center;">01/03/2023</td>
+    <td style="text-align:center;">25/02/2023</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">ECO6</td>
+    <td>Economy</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">05/07/2022</td>
+    <td style="text-align:center;">08/07/2022</td>
+    <td style="text-align:center;">22/08/2022</td>
+    <td style="text-align:center;">01/08/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO18</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">28/04/2022</td>
+    <td style="text-align:center;">29/04/2022</td>
+    <td style="text-align:center;">29/06/2022</td>
+    <td style="text-align:center;">06/05/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">ECO5</td>
+    <td>Economy</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">28/04/2022</td>
+    <td style="text-align:center;">02/05/2022</td>
+    <td style="text-align:center;">31/07/2022</td>
+    <td style="text-align:center;">21/06/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO15</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">22/04/2022</td>
+    <td style="text-align:center;">25/04/2022</td>
+    <td style="text-align:center;">30/06/2022</td>
+    <td style="text-align:center;">29/04/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">ECO4</td>
+    <td>Economy</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">22/04/2022</td>
+    <td style="text-align:center;">28/04/2022</td>
+    <td style="text-align:center;">27/07/2022</td>
+    <td style="text-align:center;">15/06/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RH5</td>
+    <td>Reholder (Expedited)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">13/04/2022</td>
+    <td style="text-align:center;">13/04/2022</td>
+    <td style="text-align:center;">12/05/2022</td>
+    <td style="text-align:center;">15/04/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">ECO3</td>
+    <td>Economy</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">13/04/2022</td>
+    <td style="text-align:center;">14/04/2022</td>
+    <td style="text-align:center;">13/07/2022</td>
+    <td style="text-align:center;">17/05/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO14</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">24/03/2022</td>
+    <td style="text-align:center;">29/03/2022</td>
+    <td style="text-align:center;">09/06/2022</td>
+    <td style="text-align:center;">05/04/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">ECO2</td>
+    <td>Economy</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">24/03/2022</td>
+    <td style="text-align:center;">29/03/2022</td>
+    <td style="text-align:center;">16/06/2022</td>
+    <td style="text-align:center;">27/04/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">ECO1</td>
+    <td>Economy</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">24/03/2022</td>
+    <td style="text-align:center;">29/03/2022</td>
+    <td style="text-align:center;">16/06/2022</td>
+    <td style="text-align:center;">27/04/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO13</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">25/02/2022</td>
+    <td style="text-align:center;">04/03/2022</td>
+    <td style="text-align:center;">04/05/2022</td>
+    <td style="text-align:center;">25/03/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO12</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">19/01/2022</td>
+    <td style="text-align:center;">22/01/2022</td>
+    <td style="text-align:center;">06/03/2022</td>
+    <td style="text-align:center;">17/02/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO17</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">15/12/2021</td>
+    <td style="text-align:center;">16/12/2021</td>
+    <td style="text-align:center;">31/01/2022</td>
+    <td style="text-align:center;">30/12/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO16</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">17/11/2021</td>
+    <td style="text-align:center;">18/11/2021</td>
+    <td style="text-align:center;">27/12/2021</td>
+    <td style="text-align:center;">03/12/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RH4</td>
+    <td>Reholder (Expedited)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">04/11/2021</td>
+    <td style="text-align:center;">04/11/2021</td>
+    <td style="text-align:center;">04/12/2021</td>
+    <td style="text-align:center;">05/11/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">SEO5</td>
+    <td>Super Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">22/10/2021</td>
+    <td style="text-align:center;">22/10/2021</td>
+    <td style="text-align:center;">01/11/2021</td>
+    <td style="text-align:center;">04/11/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RH3</td>
+    <td>Reholder (Expedited)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">22/10/2021</td>
+    <td style="text-align:center;">22/10/2021</td>
+    <td style="text-align:center;">22/11/2021</td>
+    <td style="text-align:center;">25/10/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO15D</td>
+    <td>Express (Dual)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">22/10/2021</td>
+    <td style="text-align:center;">22/10/2021</td>
+    <td style="text-align:center;">07/12/2021</td>
+    <td style="text-align:center;">08/11/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO15</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">22/10/2021</td>
+    <td style="text-align:center;">22/10/2021</td>
+    <td style="text-align:center;">01/12/2021</td>
+    <td style="text-align:center;">01/11/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RH2</td>
+    <td>Reholder (Expedited)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">01/10/2021</td>
+    <td style="text-align:center;">01/10/2021</td>
+    <td style="text-align:center;">01/12/2021</td>
+    <td style="text-align:center;">04/10/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO14</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">16/09/2021</td>
+    <td style="text-align:center;">16/09/2021</td>
+    <td style="text-align:center;">18/10/2021</td>
+    <td style="text-align:center;">11/10/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">SEO4</td>
+    <td>Super Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">20/08/2021</td>
+    <td style="text-align:center;">20/08/2021</td>
+    <td style="text-align:center;">28/08/2021</td>
+    <td style="text-align:center;">26/08/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO13</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">20/08/2021</td>
+    <td style="text-align:center;">20/08/2021</td>
+    <td style="text-align:center;">27/09/2021</td>
+    <td style="text-align:center;">31/08/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO12</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">22/07/2021</td>
+    <td style="text-align:center;">22/07/2021</td>
+    <td style="text-align:center;">04/09/2021</td>
+    <td style="text-align:center;">18/08/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">SEO3</td>
+    <td>Super Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">17/06/2021</td>
+    <td style="text-align:center;">18/06/2021</td>
+    <td style="text-align:center;">01/07/2021</td>
+    <td style="text-align:center;">22/06/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">SEO2</td>
+    <td>Super Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">27/04/2021</td>
+    <td style="text-align:center;">29/04/2021</td>
+    <td style="text-align:center;">15/05/2021</td>
+    <td style="text-align:center;">05/05/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">TCG9</td>
+    <td>Trading Card Game Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">31/03/2021</td>
+    <td style="text-align:center;">13/05/2021</td>
+    <td style="text-align:center;">21/09/2022</td>
+    <td style="text-align:center;">16/08/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO11</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">31/03/2021</td>
+    <td style="text-align:center;">13/05/2021</td>
+    <td style="text-align:center;">15/09/2021</td>
+    <td style="text-align:center;">30/07/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RH1</td>
+    <td>Reholder</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">31/03/2021</td>
+    <td style="text-align:center;">14/05/2021</td>
+    <td style="text-align:center;">04/02/2022</td>
+    <td style="text-align:center;">03/11/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">MC1</td>
+    <td>Modern Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">31/03/2021</td>
+    <td style="text-align:center;">13/05/2021</td>
+    <td style="text-align:center;">17/09/2022</td>
+    <td style="text-align:center;">08/08/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO11</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">31/03/2021</td>
+    <td style="text-align:center;">04/05/2021</td>
+    <td style="text-align:center;">12/07/2021</td>
+    <td style="text-align:center;">07/06/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO10</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">05/03/2021</td>
+    <td style="text-align:center;">15/03/2021</td>
+    <td style="text-align:center;">06/06/2021</td>
+    <td style="text-align:center;">27/04/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">TCG8</td>
+    <td>Trading Card Game Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">25/02/2021</td>
+    <td style="text-align:center;">07/04/2021</td>
+    <td style="text-align:center;">07/06/2022</td>
+    <td style="text-align:center;">04/06/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO9D</td>
+    <td>Regular (Dual)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">25/02/2021</td>
+    <td style="text-align:center;">30/03/2021</td>
+    <td style="text-align:center;">25/07/2021</td>
+    <td style="text-align:center;">01/07/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO9</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">25/02/2021</td>
+    <td style="text-align:center;">30/03/2021</td>
+    <td style="text-align:center;">24/06/2021</td>
+    <td style="text-align:center;">12/05/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO10</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">25/02/2021</td>
+    <td style="text-align:center;">30/03/2021</td>
+    <td style="text-align:center;">31/05/2021</td>
+    <td style="text-align:center;">27/05/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">SEO1</td>
+    <td>Super Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">12/02/2021</td>
+    <td style="text-align:center;">16/02/2021</td>
+    <td style="text-align:center;">18/02/2021</td>
+    <td style="text-align:center;">17/02/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO8</td>
+    <td>Regular (Promo)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">12/02/2021</td>
+    <td style="text-align:center;">25/02/2021</td>
+    <td style="text-align:center;">12/05/2021</td>
+    <td style="text-align:center;">14/04/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO9</td>
+    <td>Express (Promo)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">12/02/2021</td>
+    <td style="text-align:center;">25/02/2021</td>
+    <td style="text-align:center;">30/04/2021</td>
+    <td style="text-align:center;">07/04/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">TCG7</td>
+    <td>Trading Card Game Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">02/02/2021</td>
+    <td style="text-align:center;">26/03/2021</td>
+    <td style="text-align:center;">17/06/2022</td>
+    <td style="text-align:center;">31/05/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO7</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">02/02/2021</td>
+    <td style="text-align:center;">10/02/2021</td>
+    <td style="text-align:center;">22/04/2021</td>
+    <td style="text-align:center;">31/03/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO8</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">02/02/2021</td>
+    <td style="text-align:center;">10/02/2021</td>
+    <td style="text-align:center;">03/04/2021</td>
+    <td style="text-align:center;">25/03/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">TCG6</td>
+    <td>Trading Card Game Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">18/01/2021</td>
+    <td style="text-align:center;">16/03/2021</td>
+    <td style="text-align:center;">04/05/2022</td>
+    <td style="text-align:center;">19/04/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO6</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">18/01/2021</td>
+    <td style="text-align:center;">27/01/2021</td>
+    <td style="text-align:center;">03/04/2021</td>
+    <td style="text-align:center;">02/03/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO7</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">18/01/2021</td>
+    <td style="text-align:center;">27/01/2021</td>
+    <td style="text-align:center;">18/02/2021</td>
+    <td style="text-align:center;">25/02/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">TCG5</td>
+    <td>Trading Card Game Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">30/12/2020</td>
+    <td style="text-align:center;">26/02/2021</td>
+    <td style="text-align:center;">09/04/2022</td>
+    <td style="text-align:center;">22/03/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO5</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">30/12/2020</td>
+    <td style="text-align:center;">06/01/2021</td>
+    <td style="text-align:center;">02/11/2021</td>
+    <td style="text-align:center;">08/02/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO6</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">30/12/2020</td>
+    <td style="text-align:center;">06/01/2021</td>
+    <td style="text-align:center;">28/01/2021</td>
+    <td style="text-align:center;">22/01/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">TCG4</td>
+    <td>Trading Card Game Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">16/12/2020</td>
+    <td style="text-align:center;">19/02/2021</td>
+    <td style="text-align:center;">06/03/2022</td>
+    <td style="text-align:center;">22/02/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO4</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">16/12/2020</td>
+    <td style="text-align:center;">23/12/2020</td>
+    <td style="text-align:center;">29/01/2021</td>
+    <td style="text-align:center;">22/01/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO5</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">16/12/2020</td>
+    <td style="text-align:center;">23/12/2020</td>
+    <td style="text-align:center;">15/01/2021</td>
+    <td style="text-align:center;">19/01/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO3</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">13/12/2020</td>
+    <td style="text-align:center;">17/12/2020</td>
+    <td style="text-align:center;">25/01/2021</td>
+    <td style="text-align:center;">19/01/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO4</td>
+    <td>Express (Supersized)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">13/12/2020</td>
+    <td style="text-align:center;">18/12/2020</td>
+    <td style="text-align:center;">01/12/2021</td>
+    <td style="text-align:center;">14/01/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO3</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">13/12/2020</td>
+    <td style="text-align:center;">17/12/2020</td>
+    <td style="text-align:center;">01/11/2021</td>
+    <td style="text-align:center;">07/01/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">UMC1</td>
+    <td>Ultra-Modern Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">04/12/2020</td>
+    <td style="text-align:center;">12/02/2021</td>
+    <td style="text-align:center;">02/01/2022</td>
+    <td style="text-align:center;">06/12/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">TCG3</td>
+    <td>Trading Card Game Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">04/12/2020</td>
+    <td style="text-align:center;">12/02/2021</td>
+    <td style="text-align:center;">17/02/2022</td>
+    <td style="text-align:center;">14/02/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO2</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">04/12/2020</td>
+    <td style="text-align:center;">08/12/2020</td>
+    <td style="text-align:center;">15/01/2021</td>
+    <td style="text-align:center;">07/01/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO1</td>
+    <td>Regular</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">23/11/2020</td>
+    <td style="text-align:center;">23/11/2020</td>
+    <td style="text-align:center;">29/12/2020</td>
+    <td style="text-align:center;">21/12/2020</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO2</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">23/11/2020</td>
+    <td style="text-align:center;">23/11/2020</td>
+    <td style="text-align:center;">15/12/2020</td>
+    <td style="text-align:center;">14/12/2020</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">TCG2</td>
+    <td>Trading Card Game Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">20/11/2020</td>
+    <td style="text-align:center;">05/02/2021</td>
+    <td style="text-align:center;">12/01/2022</td>
+    <td style="text-align:center;">07/01/2022</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">RO0</td>
+    <td>Regular (Jumbo)</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">20/11/2020</td>
+    <td style="text-align:center;">20/11/2020</td>
+    <td style="text-align:center;">25/12/2020</td>
+    <td style="text-align:center;">21/12/2020</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">EO1</td>
+    <td>Express</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">20/11/2020</td>
+    <td style="text-align:center;">20/11/2020</td>
+    <td style="text-align:center;">12/12/2020</td>
+    <td style="text-align:center;">10/12/2020</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">TCG1</td>
+    <td>Trading Card Game Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">04/11/2020</td>
+    <td style="text-align:center;">28/01/2021</td>
+    <td style="text-align:center;">04/01/2022</td>
+    <td style="text-align:center;">20/12/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">UMC0</td>
+    <td>Ultra-Modern Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">09/10/2020</td>
+    <td style="text-align:center;">11/01/2021</td>
+    <td style="text-align:center;">15/10/2021</td>
+    <td style="text-align:center;">29/09/2021</td>
+</tr><tr>
+    <td style="text-align:center; font-weight:bold;">MC0</td>
+    <td>Modern Cards</td>
+    
+    <td style="text-align:center; font-weight:bold;">SHIPPED</td>
+    <td style="text-align:center;">09/10/2020</td>
+    <td style="text-align:center;">11/01/2021</td>
+    <td style="text-align:center;">20/10/2021</td>
+    <td style="text-align:center;">08/07/2021</td>
+</tr>
+
+
+</tbody>
+</table>
+
+</div>
+  
+
+</div> <!--CLOSE div for container -->        
+
+</section>
+
+<!--Section 4-->   
+<section>       
+
+<div class="container pad">  
+
+<h3 class="center" >ORDER TRACKER</h3>
+
+<p>For a <b>preview</b> of how this work, you may enter <u>0 for both order number & password</u> under <i>Order Number Login.</i> <br><br>
+For <b><u>existing submitters</u></b>, enter your existing order number under <b>Order Number</b> & your mobile number under <b>Password</b>.<br>
+To <u>view all orders</u>, sign up for an account and login at <a target="_blank" href="https://sgcardbros.com/login">Login Page</a>.  </p>
+<!-- <blockquote>Under Email Login, we now have a <u><a target="_blank" href = "https://sgcardbros.com/faq" >Tiered Loyalty Program</a></u> where submitters enjoy different loyalty rewards depending on their tier, which is based on their total amount spent. (Rewards will be given from time to time and subject to our discretion.)</blockquote> -->
+
+
+<div class="row">
+<div class="col m6 s12 offset-m3">
+<div class="card z-depth-3"> 
+
+<br>
+<form id="orderStatus">
+
+<div  class="row">
+   <div class="col s6 offset-s3">
+  <label for="orderNumber">Order Number</label>
+   <input placeholder= "Order Number" class= "browser-default form-control validate" type="number" id="orderNumber" required>
+</div>
+</div>
+
+<div class="row">
+<div class="col s6 offset-s3">
+  <label for="password">Password</label>
+  <input placeholder= "Mobile Number Entered During Submission" class= "browser-default form-control validate" type="password" id="password" required>
+</div>
+</div>
+
+<br>
+
+<div id=submitBtn class="row" style="text-align:center;">   
+  <button class="btn waves-effect waves-light">Submit</button>
+</div>
+
+<br>
+
+</form>    
+
+</div> <!--CLOSE card -->  
+
+</div>
+</div> 
+
+</div> <!--CLOSE CONTAINNER -->  
+
+
+<!--ORDER NUMBER LOGIN -->  
+<div class= "white">   
+
+<div class="container pad" id="orderLogin" style="display: none;">  
+
+
+<div class="row">
+
+
+<div id="group"></div>
+
+<div  style="overflow-x:auto;">      
+<table class="styled-table striped z-depth-2 highlight">
+<thead>
+  <tr class="white-text" id="tableHeader">
+
+  </tr>
+</thead>
+
+<tbody id="table-body">
+ 
+</tbody>
+</table>
+</div>
+
+<div id="summary"></div>
+
+<div id="loader"></div>
+
+</div> <!--CLOSE ROW -->  
+
+</div><!--CLOSE CONTAINNER --> 
+
+</div>  
+
+
+</section>
+
+
+<!--Floating Button -->   
+<div class="floatingImage hide-on-med-and-down">
+
+
+<a target="_blank" href="https://wa.me/message/G22EMRQDH7K6A1">
+<img width="60px" src="https://i.imgur.com/LD6Td0j.png">
+</a>
+</div>
+
+<!--Chat Popout -->
+<div class="chat-popup" id="myForm">
+<form class="form-container">
+<label for="formName">Name:</label><br>
+<input type="text" id="formName" name="formName"><br>
+<label for="formEmail">Email:</label><br>
+<input type="email" id="formEmail" name="formEmail" class="validate" required>
+<label for="formMessage"><b>Message</b></label>
+<textarea id="formMessage" placeholder="Type message.." name="formMessage" class="validate" required></textarea>
+
+<button type="button" class="btn" onclick="userClickedMessage()">Send</button>
+<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+</form>
+</div>
+
+<div class="chat-popup" id="submitted">
+<form class="form-container">
+<p>Thank you for your comments/feedback.</p>
+
+
+<button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+</form>
+</div>
+      
+      
+<footer class="page-footer">
+<div class="container" style="margin: 0 auto; width: 90%;">
+<div class="row">
+<div class="col s6 m3">
+<img class="materialize-logo" src="https://i.imgur.com/IPkTog5.png" alt="Materialize" width="100">
+<p>© 2020 - 2021 SG Card Bros. All rights reserved.</p>
+</div>
+<div class="col s6 m3">
+<h5>Links</h5>
+<ul>
+          <li><a target="_blank" href="https://sgcardbros.com/">PSA Grading Submission</a></li>
+          <li><a target="_blank" href="https://sgcardbros.com/order">Order Status</a></li>
+          <li><a target="_blank" href="https://sgcardbros.com/faq">FAQs</a></li>
+          <li><a target="_blank" href="https://sgcardbros.com/marketplace">Marketplace</a></li>
+          <li><a target="_blank" href="https://sgcardbros.com/offer">eBay Best Offer Tool</a></li>
+          <li><a target="_blank" href="https://sgcardbros.com/daily">eBay Daily Auctions</a></li>
+          <li><a target="_blank" href="https://sgcardbros.com/collection">Personal Collection</a></li>
+          <li><a target="_blank" href="https://sgcardbros.com/about">About Us</a></li>
+          <li><a target="_blank" href="https://sgcardbros.com/login">Login</a></li>
+</ul>
+</div>
+<div class="col s6 m3">
+<h5>Connect</h5>
+<ul>
+          <li><a target="_blank" href="https://www.instagram.com/sgcardbros/"><img width="12px" src="https://www.instagram.com/favicon.ico"> Instagram</a></li>
+          <li><a target="_blank" href="https://www.facebook.com/groups/785452595520847/"><img width="12px" src="https://www.facebook.com/favicon.ico"> Facebook</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UC8CDkRi0KTLBGaF9EBIGm2A"><img width="12px" src="https://www.youtube.com/favicon.ico"> YouTube</a></li>
+          <li><a target="_blank" href="https://www.tiktok.com/@sgcardbros"><img width="12px" src="https://www.tiktok.com/favicon.ico"> Tiktok</a></li>
+          <li><a target="_blank" href="https://twitter.com/sgcardbros"><img width="12px" src="https://www.twitter.com/favicon.ico"> Twitter</a></li>
+</ul>
+</div>
+<div class="col s6 m3">
+<h5>Contact</h5>
+<ul>
+  <li><a target="_blank" href="https://wa.me/message/G22EMRQDH7K6A1"><img width="12px" src="https://i.imgur.com/LD6Td0j.png">Whatsapp</a></li>
+  <li><a onclick="openForm()" style="cursor:pointer;">Message</a></li>
+  <li><a href="mailto:sgcardbros@gmail.com"> Email</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+</footer>             
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>     
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-functions-compat.js"></script>
+
+<script>
+// Initialize Firebase
+const firebaseConfig = {
+apiKey: "AIzaSyAOcPovg28R4RQvJy6zV4qJUTqQvulzcZ0",
+authDomain: "sgcardbros-136bb.firebaseapp.com",
+projectId: "sgcardbros-136bb",
+storageBucket: "sgcardbros-136bb.appspot.com",
+messagingSenderId: "388914289997",
+appId: "1:388914289997:web:99ac43d6b622576012ab04",
+measurementId: "G-D71LNR8YD2"
+};
+firebase.initializeApp(firebaseConfig);
+
+// make auth and firestore references
+const auth = firebase.auth();
+const db = firebase.firestore();
+
+// update firestore settings
+db.settings({ timestampsInSnapshots: true, merge: true });
+</script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
